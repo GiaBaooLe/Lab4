@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom';
 import { Films } from '../shared/ListOfFilms';
 import { useState } from 'react';
 import { Carousel } from 'react-materialize';
+import { ThemeContext } from './ThemeContext';
 
 export default function FilmsPresentation({ films }) {
   const [film, setFilm] = useState([]);
-
   return (
-    <div className='home'>
     
+    <div className='home'>
+     
     <img  className='bg' src="./assets/images/oppennheimer.jpg" />
     <div className="container">
    

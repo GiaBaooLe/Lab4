@@ -9,9 +9,14 @@ import Contact from './components/Contact';
 import About from './components/About';
 
 import 'materialize-css/dist/css/materialize.min.css';
+import { ThemeContext, ThemeProvider } from './components/ThemeContext';
+import React from 'react';
 function App() {
+  const { toggle } = React.useContext(ThemeContext);
   return (
-    <div>
+  
+    <div  className={toggle ? "dark" : "light"}>
+    
       <Navigation />
       <Routes>
         <Route path="/" element={<Main />}></Route>
