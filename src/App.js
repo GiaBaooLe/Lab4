@@ -11,6 +11,7 @@ import About from './components/About';
 import 'materialize-css/dist/css/materialize.min.css';
 import { ThemeContext, ThemeProvider } from './components/ThemeContext';
 import React from 'react';
+import News from './components/News';
 function App() {
   const { toggle } = React.useContext(ThemeContext);
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/detail/:id" element={<Detail />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/about" element={<News />}></Route>
       </Routes>
       <Footer />
     </div>

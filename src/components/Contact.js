@@ -1,12 +1,16 @@
 import React from "react";
 import { Button, Icon, Select, TextInput, Textarea, } from "react-materialize";
+import { ThemeContext } from "./ThemeContext";
 const handleSubmit =(e)=> {
     e.preventDefault()
   }
-
+  
 const Contact = () => {
+  const {  toggleFunction } = React.useContext(ThemeContext);
+
+  const  { toggle } = React.useContext(ThemeContext);
   return (
-    <div>
+    <div style={toggle ? { background: "greylight", color:"whote"} : {}}>
       
         
         <form className="contact" onSubmit={handleSubmit}>

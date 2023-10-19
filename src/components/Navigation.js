@@ -12,7 +12,7 @@ export default function Navigation() {
 
 <div >
     <Navbar
-    style={toggle ? { background: "brown" } : {}}
+    style={toggle ? { background: "red" } : {}}
       className="menu custom-navbar"
       alignlink="right"
       brand={<span className="brand-logo">MeoMeoFilm</span>}
@@ -30,6 +30,11 @@ export default function Navigation() {
         <li to="/about">
           <Link to="/about">
             <Icon left></Icon>About
+          </Link>
+        </li>
+        <li to="/news">
+          <Link to="/news">
+            <Icon left></Icon>News
           </Link>
         </li>
         <li to="contact">

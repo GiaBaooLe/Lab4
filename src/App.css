@@ -197,7 +197,7 @@ nav ul li a.active {
 
 .contact{
   justify-content: center;
-  
+padding: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -213,8 +213,7 @@ nav ul li a.active {
 }
 .about{
   display: flex;
-  justify-content: center;
-
+ padding:300px;
 }
 .midcard{
   color:white;
